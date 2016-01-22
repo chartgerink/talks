@@ -1,0 +1,101 @@
+---
+title: "Psychologie verbeteren door meer te twijfelen"
+author: "Chris HJ Hartgerink, Tilburg University"
+date: "3 februari, 2016"
+output: ioslides_presentation
+---
+
+## Korte geschiedenis
+
+- Psychologie relatief jonge wetenschap (~1890)
+
+## Korte geschiedenis
+
+- Psychologie relatief jonge wetenschap (~1890)
+- Geen sterk verenigbaar theoretisch kader
+
+## Korte geschiedenis
+
+- Psychologie relatief jonge wetenschap (~1890)
+- Geen sterk verenigbaar theoretisch kader
+- Veranderlijke waarheid
+
+- 
+> ***Wat logisch leek, was waar.***  
+> ***Dat gaf een voldaan en rustig gevoel.***
+
+
+## Paar beginselen goede onderzoeker
+
+1. Eerlijk
+2. Voorzichtig
+3. Skeptisch
+4. Precies
+
+## Eerlijk mbt data delen?
+
+```{r, echo = FALSE}
+suppressPackageStartupMessages(library(png))
+suppressPackageStartupMessages(library(grid))
+img <- readPNG("data sharing")
+grid.raster(img)
+```
+
+## Eerlijk
+
+## Voorzichtig?
+
+## Skeptisch?
+
+## Precies?
+
+## Beginselen goede wetenschap
+
+1. Werkelijkheid niet naar de hand zetten
+2. Wegen 
+
+## Selectie aan de poort
+
+```{r using rpp data, echo = FALSE}
+# source functions
+suppressPackageStartupMessages(library(httr))
+suppressPackageStartupMessages(library(Hmisc))
+suppressPackageStartupMessages(library(metafor))
+
+info <- GET('https://osf.io/b2vn7/?action=download', write_disk('functions.r', overwrite = TRUE)) #downloads data file from the OSF
+source('functions.r')
+
+# Read in Tilburg data
+info <- GET('https://osf.io/fgjvw/?action=download', write_disk('rpp_data.csv', overwrite = TRUE)) #downloads data file from the OSF
+MASTER <- read.csv("rpp_data.csv")[1:167, ]
+colnames(MASTER)[1] <- "ID" # Change first column name to ID to be able to load .csv file
+
+plot(ecdf(MASTER$T_pval_USE..O.[!is.na(MASTER$T_pval_USE..O.) & !is.na(MASTER$T_pval_USE..R.)]),
+     lty=1,
+     frame.plot=F, 
+     main="P-value distributions (CDF)",
+     xlim=c(0,1),
+     xaxs="i",
+     yaxs="i",
+     xlab="P-value",
+     ylab = "Density",
+     cex.axis=.6,
+     cex.lab=.7,
+     col = "grey")
+abline(v = .05, lty = 2)
+lines(ecdf(MASTER$T_pval_USE..R.[!is.na(MASTER$T_pval_USE..O.) & !is.na(MASTER$T_pval_USE..R.)]))
+legend(x=.5,y=.3,legend=c(paste('Original p-values, k = ',
+                                length(MASTER$T_pval_USE..O.[!is.na(MASTER$T_pval_USE..O.) & !is.na(MASTER$T_pval_USE..R.)])),
+                          paste('Replication p-values, k = ',
+                                length(MASTER$T_pval_USE..R.[!is.na(MASTER$T_pval_USE..O.) & !is.na(MASTER$T_pval_USE..R.)]))),
+       cex=1,
+       lty=c(1,1), bty = 'n',
+       col = c("grey","black"),box.lwd=0)
+```
+
+## Beschrijving
+De psychologie heeft te weinig getwijfeld aan haar bevindingen. Weinig getwijfeld aan de betrouwbaarheid van de bevindingen, niet getwijfeld aan de integriteit van haar onderzoekers, niet getwijfeld aan absurde experimenten die ongeloofwaardige effecten lieten zien. Er is reden genoeg tot twijfel, dus zal ik de chronologie van de afgelopen jaren in vliegensvlucht doorlopen en laten zien dat we als uitgangspunt niks moeten geloven en het onderzoek ons moet overtuigen en niet als uitgangspunt het onderzoek geloven behalve als er redenen zijn dat niet te doen.
+
+## Het verleden
+
+- 
