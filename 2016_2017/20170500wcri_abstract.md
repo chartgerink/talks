@@ -1,6 +1,6 @@
 # Detecting data anomalies on the basis of summary statistics
 
-Chris HJ Hartgerink<sup>1</sup>, Jelte M Wicherts<sup>1</sup>, Marcel ALM van Assen<sup>1</sup><sup>2</sup>
+Chris HJ Hartgerink<sup>1</sup>, Jelte M Wicherts<sup>1</sup>, Marcel ALM van Assen<sup>1,2</sup>
 
 <sup>1</sup>Department of Methodology and Statistics, Tilburg University, Tilburg, the Netherlands
 
