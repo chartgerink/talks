@@ -1,0 +1,16 @@
+---
+title: "Collaborate on code and documents"
+author: "Chris Hartgerink"
+date: "August 8th, 2017"
+output:
+  tufte::tufte_handout:
+    citation_package: natbib
+    latex_engine: xelatex
+  tufte::tufte_book:
+    citation_package: natbib
+    latex_engine: xelatex
+  tufte::tufte_html: default
+link-citations: yes
+---
+
+## Key points^[This document is available under a CC 0 license. If you find typo's or want to make other suggestions, please do so via Github (click [here](https://github.com/chartgerink/talks/edit/master/2016_2017/20170808utrecht/collaborate_handout.Rmd))]

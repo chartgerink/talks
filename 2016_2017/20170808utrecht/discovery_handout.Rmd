@@ -1,6 +1,6 @@
 ---
 title: "Discovering information"
-author: "Chris Hartgerink <br> @chartgerink <br> CC 0"
+author: "Chris Hartgerink"
 date: "August 8th, 2017"
 output:
   tufte::tufte_handout:
@@ -40,7 +40,7 @@ if(!file.exists('supporting/hitslist'))
 load('supporting/hitslist')
 ```
 
-## Key points
+## Key points^[This document is available under a CC 0 license. If you find typo's or want to make other suggestions, please do so via Github (click [here](https://github.com/chartgerink/talks/edit/master/2016_2017/20170808utrecht/discovery_handout.Rmd))]
 
 1. Learn about the increased importance of innovation in information discovery
 2. Learn about barriers to innovation
