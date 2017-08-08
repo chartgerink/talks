@@ -60,13 +60,15 @@ Version control to the rescue!
 ## Version control
 
 ```{r, echo=FALSE}
-knitr::include_graphics('http://wac-cdn.atlassian.com/dam/jcr:389059a7-214c-46a3-bc52-7781b4730301/hero.svg?cdnVersion=fp')
+#http://wac-cdn.atlassian.com/dam/jcr:389059a7-214c-46a3-bc52-7781b4730301/hero.svg?cdnVersion=fp
+knitr::include_graphics('figures/hero.svg')
 ```
 
 ## Version control
 
 ```{r, echo=FALSE}
-knitr::include_graphics('http://media.springernature.com/full/springer-static/image/art%3A10.1186%2F1751-0473-8-7/MediaObjects/13029_2013_Article_88_Fig3_HTML.jpg')
+#http://media.springernature.com/full/springer-static/image/art%3A10.1186%2F1751-0473-8-7/MediaObjects/13029_2013_Article_88_Fig3_HTML.jpg
+knitr::include_graphics('figures/hero2.jpg')
 ```
 
 ## Version control
@@ -96,7 +98,8 @@ knitr::include_graphics('figures/plain-text.png')
 ## Pull requests
 
 ```{r, echo=FALSE}
-knitr::include_graphics('http://wac-cdn.atlassian.com/dam/jcr:389059a7-214c-46a3-bc52-7781b4730301/hero.svg?cdnVersion=fp')
+# http://wac-cdn.atlassian.com/dam/jcr:389059a7-214c-46a3-bc52-7781b4730301/hero.svg?cdnVersion=fp
+knitr::include_graphics('figures/hero.svg')
 ```
 
 ## Pull requests
@@ -152,7 +155,7 @@ Fundamentally open collaboration boils down to two things:
 1. Open isn't zero sum, benefits you as user as well!
 2. Open makes you more organized
 3. Open forces you to be explicit, also towards yourself (this is amazing when you revisit projects)
-4. version control allows you to organize files in time instead of within one folder
+4. version control allows you to organize files in time instead of within one folder/
 
 ## Exercise [20 minutes approximately]
 
@@ -167,3 +170,4 @@ Let's get you started on using Github.
   * committing information
   * opening a pull request
   * merging a pull request
+3. Reflect on how using version control would help you in your own research.
